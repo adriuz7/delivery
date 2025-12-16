@@ -1,33 +1,50 @@
-using System;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
+using UnityEngine.InputSystem;
 
 namespace UnityStandardAssets.Vehicles.Car
 {
-    [RequireComponent(typeof (CarController))]
+    [RequireComponent(typeof(CarController))]
     public class CarUserControl : MonoBehaviour
     {
-        private CarController m_Car; // the car controller we want to use
+        private CarController m_Car;
+        private CarInputActions input;
 
+        private float steer;
+        private float accel;
+        private float brake;
+        private float handbrake;
 
         private void Awake()
         {
-            // get the car controller
             m_Car = GetComponent<CarController>();
+            input = new CarInputActions();
         }
 
+        private void OnEnable()
+        {
+            input.Player.Enable();
+
+            input.Player.Steer.performed += ctx => steer = ctx.ReadValue<float>();
+            input.Player.Steer.canceled  += _ => steer = 0f;
+
+            input.Player.Accelerate.performed += ctx => accel = ctx.ReadValue<float>();
+            input.Player.Accelerate.canceled  += _ => accel = 0f;
+
+            input.Player.Brake.performed += ctx => brake = ctx.ReadValue<float>();
+            input.Player.Brake.canceled  += _ => brake = 0f;
+
+            input.Player.Handbrake.performed += _ => handbrake = 1f;
+            input.Player.Handbrake.canceled  += _ => handbrake = 0f;
+        }
+
+        private void OnDisable()
+        {
+            input.Player.Disable();
+        }
 
         private void FixedUpdate()
         {
-            // pass the input to the car!
-            float h = CrossPlatformInputManager.GetAxis("Horizontal");
-            float v = CrossPlatformInputManager.GetAxis("Vertical");
-#if !MOBILE_INPUT
-            float handbrake = CrossPlatformInputManager.GetAxis("Jump");
-            m_Car.Move(h, v, v, handbrake);
-#else
-            m_Car.Move(h, v, v, 0f);
-#endif
+            m_Car.Move(steer, accel, brake, handbrake);
         }
     }
 }
