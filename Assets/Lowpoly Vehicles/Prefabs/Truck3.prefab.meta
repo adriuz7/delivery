@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 67d1a57c46ae96a4eae799e32fc6b8d5
+timeCreated: 1509223221
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 103632
+  packageName: Lowpoly Vehicles Models Package
+  packageVersion: 1.0
+  assetPath: Assets/Lowpoly Vehicles/Prefabs/Truck3.prefab
+  uploadId: 208836

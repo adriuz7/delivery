@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 6018b37b0f6e58749ac3bfe644b3777a
+timeCreated: 1509208127
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 103632
+  packageName: Lowpoly Vehicles Models Package
+  packageVersion: 1.0
+  assetPath: Assets/Lowpoly Vehicles/Materials/Chrome.mat
+  uploadId: 208836

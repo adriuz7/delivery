@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 2e0cb7d5212d4c4468babf8708754d8d
+timeCreated: 1509207706
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 103632
+  packageName: Lowpoly Vehicles Models Package
+  packageVersion: 1.0
+  assetPath: Assets/Lowpoly Vehicles/Materials/CarLights 1.mat
+  uploadId: 208836

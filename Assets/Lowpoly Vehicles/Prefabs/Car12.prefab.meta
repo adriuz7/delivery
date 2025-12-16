@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: d36b42ba84e3ad346a7ae288ccb87f74
+timeCreated: 1509220475
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 103632
+  packageName: Lowpoly Vehicles Models Package
+  packageVersion: 1.0
+  assetPath: Assets/Lowpoly Vehicles/Prefabs/Car12.prefab
+  uploadId: 208836

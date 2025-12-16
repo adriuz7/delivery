@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: bf9c7d961091b6d4da0f5296a361d68c
+timeCreated: 1509211000
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 103632
+  packageName: Lowpoly Vehicles Models Package
+  packageVersion: 1.0
+  assetPath: Assets/Lowpoly Vehicles/Models/Truck02.asset
+  uploadId: 208836

@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: e6969358aea096148b88723abfd0b7c8
+timeCreated: 1509226284
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 100100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 103632
+  packageName: Lowpoly Vehicles Models Package
+  packageVersion: 1.0
+  assetPath: Assets/Lowpoly Vehicles/Prefabs/Plane.prefab
+  uploadId: 208836

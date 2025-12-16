@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 110400a598783c34bb985d6b98bcf8ef
+timeCreated: 1509206977
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 103632
+  packageName: Lowpoly Vehicles Models Package
+  packageVersion: 1.0
+  assetPath: Assets/Lowpoly Vehicles/Materials/Carbody.mat
+  uploadId: 208836

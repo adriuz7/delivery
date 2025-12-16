@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: b5e1246349c9af847a8fe5e86531e3b4
+timeCreated: 1509208395
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 103632
+  packageName: Lowpoly Vehicles Models Package
+  packageVersion: 1.0
+  assetPath: Assets/Lowpoly Vehicles/Models/Car04.asset
+  uploadId: 208836
