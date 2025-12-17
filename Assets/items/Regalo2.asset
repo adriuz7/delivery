@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c42d55960337d0a458d5434ca55148c8, type: 3}
+  m_Name: Regalo2
+  m_EditorClassIdentifier: 
+  itemName: "mu\xF1eca"
+  peso: 4
+  precio: 5
+  tipo: 1
+  descripcion: juguete loco
+  icono: {fileID: 21300000, guid: a3983c59ebf804b4abba687bd7c9e92f, type: 3}
+  worldPrefab: {fileID: 7600477516027221144, guid: ff59a40b626eeaa43bba86fe25ef639a, type: 3}
