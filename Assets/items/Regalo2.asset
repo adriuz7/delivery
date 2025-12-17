@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Regalo2
   m_EditorClassIdentifier: 
   itemNombre: "Mu\xF1eca"
+  TiempoEntrega: 120
   Peso: 4
   Precio: 150
   Destino: Villa Tomate
+  DestinoID: NPC_Pedro
   Estado: 100
   Tipo: 0
   descripcion: juguete loco

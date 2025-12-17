@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Regalo1
   m_EditorClassIdentifier: 
   itemNombre: Television
+  TiempoEntrega: 120
   Peso: 50
   Precio: 1000
   Destino: Colonia
+  DestinoID: Colonia
   Estado: 100
   Tipo: 1
   descripcion: Este es un regalo para la familia anderson

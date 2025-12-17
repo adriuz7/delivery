@@ -13,9 +13,11 @@ public enum ItemType
 public class ItemData : ScriptableObject
 {
     public string itemNombre;
+    public float TiempoEntrega = 120f;
     public float Peso;
     public int Precio;
     public string Destino;
+    public string DestinoID;
     public float Estado = 100f;
     public ItemType Tipo;
     [TextArea]
