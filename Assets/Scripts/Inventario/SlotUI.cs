@@ -7,9 +7,11 @@ public class SlotUI : MonoBehaviour,
     IDragHandler,
     IEndDragHandler,
     IPointerEnterHandler,
-    IPointerExitHandler
+    IPointerExitHandler,
+    IPointerClickHandler
 {
     public Image icon;
+    public Image fondoSeleccion;
 
     private Inventory inventory;
     private int index;
@@ -49,6 +51,7 @@ public class SlotUI : MonoBehaviour,
 
     public void OnEndDrag(PointerEventData eventData)
     {
+        if (inventory.SlotSeleccionado != index) return;
         if (currentItem == null) return;
 
         icon.raycastTarget = true;
@@ -75,4 +78,19 @@ public class SlotUI : MonoBehaviour,
     {
         TooltipUI.Instance.Hide();
     }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (currentItem == null) return;
+
+        inventory.SeleccionarSlot(index);
+    }
+
+    public void ActualizarSeleccion()
+    {
+        bool seleccionado = inventory.SlotSeleccionado == index;
+        fondoSeleccion.enabled = seleccionado;
+    }
+
+
 }

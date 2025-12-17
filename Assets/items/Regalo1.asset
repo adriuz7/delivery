@@ -12,10 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c42d55960337d0a458d5434ca55148c8, type: 3}
   m_Name: Regalo1
   m_EditorClassIdentifier: 
-  itemName: Juguete1
-  peso: 10
-  precio: 100
-  tipo: 2
+  itemNombre: Television
+  Peso: 50
+  Precio: 1000
+  Destino: Colonia
+  Estado: 100
+  Tipo: 1
   descripcion: Este es un regalo para la familia anderson
   icono: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
   worldPrefab: {fileID: 3449591414611242395, guid: a352fc7be880b6a429c9fc79421cca3d, type: 3}

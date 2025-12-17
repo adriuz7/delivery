@@ -60,6 +60,7 @@ public class InventoryUI : MonoBehaviour
         {
             ItemWorld itemWorld = inventory.slots[i].itemWorld;
             slotUIs[i].SetItem(itemWorld != null ? itemWorld.data : null);
+            slotUIs[i].ActualizarSeleccion();
         }
     }
 }

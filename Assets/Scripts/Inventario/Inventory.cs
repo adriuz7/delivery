@@ -43,5 +43,51 @@ public class Inventory : MonoBehaviour
         slots[index].itemWorld = null;
         OnInventoryChanged?.Invoke();
     }
+    public ItemWorld ObtenerItemEntregable()
+    {
+        foreach (var slot in slots)
+        {
+            if (slot.itemWorld != null)
+                return slot.itemWorld;
+        }
+        return null;
+    }
+
+    public void RemoverItem(ItemWorld item)
+    {
+        foreach (var slot in slots)
+        {
+            if (slot.itemWorld == item)
+            {
+                slot.itemWorld = null;
+                OnInventoryChanged?.Invoke();
+                return;
+            }
+        }
+    }
+
+    public int SlotSeleccionado { get; private set; } = -1;
+
+    public void SeleccionarSlot(int index)
+    {
+        if (index < 0 || index >= slots.Count) return;
+        if (slots[index].itemWorld == null) return;
+    
+        SlotSeleccionado = index;
+        OnInventoryChanged?.Invoke();
+    }
+    
+    public ItemWorld ObtenerItemSeleccionado()
+    {
+        if (SlotSeleccionado < 0 || SlotSeleccionado >= slots.Count)
+            return null;
+    
+        return slots[SlotSeleccionado].itemWorld;
+    }
+    
+    public void LimpiarSeleccion()
+    {
+        SlotSeleccionado = -1;
+    }
 
 }

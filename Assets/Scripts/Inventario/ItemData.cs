@@ -16,7 +16,7 @@ public class ItemData : ScriptableObject
     public float Peso;
     public int Precio;
     public string Destino;
-    public float Estado;
+    public float Estado = 100f;
     public ItemType Tipo;
     [TextArea]
     public string descripcion;
